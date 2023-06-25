@@ -1,0 +1,1805 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#"
+     xml:base="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:gd="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#terms:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#terms:license -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#terms:license">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T06:47:28Z</dc:date>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasFlowerType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasFlowerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower"/>
+        <rdfs:label xml:lang="en">hasFlowerType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasFruitType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasFruitType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit"/>
+        <rdfs:label xml:lang="en">hasFruitType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasHerbType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasHerbType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb"/>
+        <rdfs:label xml:lang="en">hasHerbType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasLayoutStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasLayoutStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">hasLayoutStyle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasMaintenanceTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasMaintenanceTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:label xml:lang="en">hasMaintenanceTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Owner"/>
+        <rdfs:label xml:lang="en">hasOwner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasPestControlMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasPestControlMethod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <rdfs:label xml:lang="en">hasPestControlMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasVegetableType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasVegetableType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable"/>
+        <rdfs:label xml:lang="en">hasVegetableType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#performsTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#performsTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:label xml:lang="en">performsTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#requiresWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#requiresWeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <rdfs:label xml:lang="en">requiresWeather</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#usesTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#usesTool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <rdfs:label xml:lang="en">usesTool</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAreainSqFeet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAreainSqFeet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">hasAreainSqFeet</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAvgHumidityPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAvgHumidityPercentage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">hasAvgHumidityPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAvgTemperatureInCelsius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasAvgTemperatureInCelsius">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">hasAvgTemperatureInCelsius</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasColor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasCreationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasCreationDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">hasCreationDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasCuttingSteps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasCuttingSteps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasCuttingSteps</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasDuration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasExperience">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Gardener"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasExperience</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasHeightinFeet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasHeightinFeet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">hasHeightinFeet</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasPriceinRupees -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasPriceinRupees">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">hasPriceinRupees</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasTexture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasTexture</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasTreatment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pests"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasTreatment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasWateringSteps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#hasWateringSteps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasWateringSteps</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#haspHLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#haspHLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">haspHLevel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Aphids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Aphids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insects"/>
+        <rdfs:label xml:lang="en">Aphids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Caterpillars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Caterpillars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insects"/>
+        <rdfs:label xml:lang="en">Caterpillars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <rdfs:label xml:lang="en">ChemicalControl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ContainerGardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ContainerGardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">ContainerGardening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <rdfs:label xml:lang="en">CuttingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pests"/>
+        <rdfs:label xml:lang="en">Diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fertilizing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fertilizing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:label xml:lang="en">Fertilizing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:label xml:lang="en">Flower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:label xml:lang="en">FlowerGarden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:label xml:lang="en">Fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:label xml:lang="en">FruitGarden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FungalInfections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FungalInfections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Diseases"/>
+        <rdfs:label xml:lang="en">FungalInfections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden">
+        <rdfs:label xml:lang="en">Garden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout">
+        <rdfs:label xml:lang="en">GardenLayout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Gardener -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Gardener">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <rdfs:label xml:lang="en">Gardener</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:label xml:lang="en">Herb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:label xml:lang="en">HerbGarden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pests"/>
+        <rdfs:label xml:lang="en">Insects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks">
+        <rdfs:label xml:lang="en">MaintenanceTasks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <rdfs:label xml:lang="en">Owner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod">
+        <rdfs:label xml:lang="en">PestControlMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pests">
+        <rdfs:label xml:lang="en">Pests</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant">
+        <rdfs:label xml:lang="en">Plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process">
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pruning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pruning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:label xml:lang="en">Pruning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RaisedBeds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RaisedBeds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">RaisedBeds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">Rows</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Slugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Slugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insects"/>
+        <rdfs:label xml:lang="en">Slugs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil">
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools">
+        <rdfs:label xml:lang="en">Tools</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdfs:label xml:lang="en">Vegetable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdfs:label xml:lang="en">VegetableGarden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ViralInfections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ViralInfections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Diseases"/>
+        <rdfs:label xml:lang="en">ViralInfections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <rdfs:label xml:lang="en">WateringProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather">
+        <rdfs:label xml:lang="en">Weather</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weeding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdfs:label xml:lang="en">Weeding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Gardener"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalFertilizing"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Deadheading"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandPulling"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mulching"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing"/>
+        <performsTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ThinningOutPruning"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasAge>
+        <hasExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 Year</hasExperience>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</hasName>
+        <rdfs:label xml:lang="en">Ahmed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <rdfs:label xml:lang="en">AllSeason</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Bascket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Bascket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ContainerGardening"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">Bascket</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Basil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Basil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Biopesticides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BasilGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Basil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BasilGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BasilGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden"/>
+        <hasHerbType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Basil"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Bascket"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ThinningOutPruning"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lahore</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">75.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-02T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">BasilGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weeding"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Few weeks to months.</hasDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Biopesticides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Biopesticides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <rdfs:label xml:lang="en">Biopesticides</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BlackSlug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BlackSlug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Slugs"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of iron phosphate-based slug baits, such as products containing the active ingredient ferric phosphate, which are effective in controlling slugs in gardens and agricultural settings.</hasTreatment>
+        <rdfs:label xml:lang="en">BlackSlug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BlackSwallowtailCaterpillar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BlackSwallowtailCaterpillar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Caterpillars"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manual removal or organic methods such as introducing natural predators or using Bt insecticide can help control Black Swallowtail caterpillars if necessary</hasTreatment>
+        <rdfs:label xml:lang="en">BlackSwallowtailCaterpillar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BrickRaisedBeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BrickRaisedBeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RaisedBeds"/>
+        <rdfs:label xml:lang="en">BrickRaisedBeds</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BrownGardenSlug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BrownGardenSlug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Slugs"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of metaldehyde-based slug baits, which are effective in controlling slugs in gardens and agricultural settings.</hasTreatment>
+        <rdfs:label xml:lang="en">BrownGardenSlug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalFertilizing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalFertilizing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fertilizing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Few Days</hasDuration>
+        <rdfs:label xml:lang="en">ChemicalFertilizing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CitrusAphid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CitrusAphid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Aphids"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides containing imidacloprid.</hasTreatment>
+        <rdfs:label xml:lang="en">CitrusAphid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CitrusTristezaVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CitrusTristezaVirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ViralInfections"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There is currently no known cure for Citrus Tristeza Virus (CTV) once a tree is infected. The best approach is prevention through the use of disease-free planting material and proper sanitation practices.</hasTreatment>
+        <rdfs:label xml:lang="en">CitrusTristezaVirus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ClaySoil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ClaySoil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil"/>
+        <hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clay soil has a fine texture composed of very small particles, which results in its ability to hold water well but can lead to poor drainage and compaction when wet.</hasTexture>
+        <haspHLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</haspHLevel>
+        <rdfs:label xml:lang="en">ClaySoil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CodlingMoth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CodlingMoth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Caterpillars"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides containing active ingredients such as spinosad or pheromone-based traps to disrupt mating and reduce population.</hasTreatment>
+        <rdfs:label xml:lang="en">CodlingMoth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Containers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Containers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ContainerGardening"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">Containers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Deadheading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Deadheading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pruning"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-5 Day</hasDuration>
+        <rdfs:label xml:lang="en">Deadheading</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Drip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Drip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">Drip</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#DripIrrigationProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#DripIrrigationProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Drip"/>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Design the drip irrigation system.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10. Maintain the system.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Gather the necessary materials.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Prepare the water source.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Lay out the main tubing.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5. Install the drip emitters.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6. Create branch lines (optional).</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7. Close the system.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8. Test the system.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9. Set the watering schedule.</hasWateringSteps>
+        <rdfs:label xml:lang="en">DripIrrigationProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <hasAvgHumidityPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasAvgHumidityPercentage>
+        <hasAvgTemperatureInCelsius rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAvgTemperatureInCelsius>
+        <rdfs:label xml:lang="en">Fall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pruning"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-5 Days</hasDuration>
+        <rdfs:label xml:lang="en">FormativePruning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T06:56:36Z</dc:date>
+        <rdfs:label xml:lang="en">Fungicides</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandPulling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandPulling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weeding"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-3 Days</hasDuration>
+        <rdfs:label xml:lang="en">HandPulling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandWateringProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandWateringProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringCan"/>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Fill watering can or bucket with water.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Pour water at the base of each plant.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Water until soil is moist but not waterlogged.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Adjust water amount based on plant&apos;s needs.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5. Avoid watering the leaves.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6. Move to next plant and repeat.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7. Refill watering can as needed.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8. Allow excess water to drain.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9. Monitor soil moisture level.</hasWateringSteps>
+        <rdfs:label xml:lang="en">HandWateringProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insecticides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insecticides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T06:56:25Z</dc:date>
+        <rdfs:label xml:lang="en">Insecticides</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#InterplantedRows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#InterplantedRows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rows"/>
+        <rdfs:label xml:lang="en">InterplantedRows</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#KeelSlug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#KeelSlug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Slugs"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of iron phosphate-based slug baits, which are effective in controlling slugs in gardens and agricultural settings.</hasTreatment>
+        <rdfs:label xml:lang="en">KeelSlug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LeafCuttingProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LeafCuttingProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PruningShears"/>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Select the plant.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Gather the necessary tools.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Choose the right time.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Cut the plant leafs.</hasCuttingSteps>
+        <rdfs:label xml:lang="en">LeafCuttingProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LeafSpot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LeafSpot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FungalInfections"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fungicide</hasTreatment>
+        <rdfs:label xml:lang="en">LeafSpot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insecticides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LemonGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Yellow</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LemonGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LemonGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFruitType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lemon"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Containers"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lahore</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.9</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-02T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">LemonGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lettuce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lettuce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LettuceGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green/ Brown</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Lettuce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LettuceAphid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LettuceAphid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Aphids"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides containing pyrethroids, such as cypermethrin or deltamethrin.</hasTreatment>
+        <rdfs:label xml:lang="en">LettuceAphid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LettuceGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LettuceGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#InterplantedRows"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandPulling"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasVegetableType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Lettuce"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karachi</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.5</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-02T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">LettuceGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LoamSoil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#LoamSoil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil"/>
+        <hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loam soil has a balanced texture with a mixture of sand, silt, and clay, making it ideal for plant growth due to its good drainage and moisture retention properties.</hasTexture>
+        <haspHLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</haspHLevel>
+        <rdfs:label xml:lang="en">LoamSoil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Marigold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Marigold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Predators"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MarigoldGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Yellow/Orange</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Marigold</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MarigoldGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MarigoldGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFlowerType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Marigold"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WoodenRaisedBeds"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sargodha</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-12T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">MarigoldGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MetalRaisedBeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MetalRaisedBeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RaisedBeds"/>
+        <rdfs:label xml:lang="en">MetalRaisedBeds</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MintGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Mint</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MintGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MintGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden"/>
+        <hasHerbType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mint"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Bascket"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lahore</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.3</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-10T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">MintGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mulching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mulching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weeding"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-4 Days</hasDuration>
+        <rdfs:label xml:lang="en">Mulching</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fertilizing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-10 Days</hasDuration>
+        <rdfs:label xml:lang="en">OrganicFertilizing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Parasitoids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Parasitoids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T06:55:35Z</dc:date>
+        <rdfs:label xml:lang="en">Parasitoids</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insecticides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PepperGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Yellow, Red</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Pepper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PepperGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PepperGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasVegetableType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pepper"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multan</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-20T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">PepperGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ContainerGardening"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdfs:label xml:lang="en">Pots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Predators -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Predators">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <rdfs:label xml:lang="en">Predators</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PruningShears -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PruningShears">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">PruningShears</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">Rake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RootCuttingProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RootCuttingProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PruningShears"/>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Select the plant.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Gather the necessary tools.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Choose the right time.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Try to shake the plant for easy cutting of roots.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5. Cut the plant roots.</hasCuttingSteps>
+        <rdfs:label xml:lang="en">RootCuttingProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RootRot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RootRot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FungalInfections"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic fungicide, such as Thiophanate-methyl</hasTreatment>
+        <rdfs:label xml:lang="en">RootRot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Insecticides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RoseGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Red/Pink</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Rose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RoseAphid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RoseAphid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Aphids"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides containing neonicotinoids, such as imidacloprid or acetamiprid.</hasTreatment>
+        <rdfs:label xml:lang="en">RoseAphid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RoseGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RoseGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFlowerType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rose"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Deadheading"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peshawar</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-02-02T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">RoseGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rosemary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rosemary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Herb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Virucides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RosemaryGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Rosemary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RosemaryGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RosemaryGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HerbGarden"/>
+        <hasHerbType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rosemary"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Containers"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FormativePruning"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sargodha</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-13T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">RosemaryGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SandySoil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SandySoil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Soil"/>
+        <hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandy soil has a coarse texture, good drainage, low water and nutrient retention, and is easy to work with.</hasTexture>
+        <haspHLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.5</haspHLevel>
+        <rdfs:label xml:lang="en">SandySoil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Owner"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Person"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</hasName>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T07:10:46Z</dc:date>
+        <rdfs:label xml:lang="en">SehrishNoreen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Shovel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Shovel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">Shovel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Spring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <hasAvgHumidityPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasAvgHumidityPercentage>
+        <hasAvgTemperatureInCelsius rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAvgTemperatureInCelsius>
+        <rdfs:label xml:lang="en">Spring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Sprinkler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Sprinkler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">Sprinkler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SprinklerIrrigationProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SprinklerIrrigationProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringProcess"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Sprinkler"/>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Set up sprinkler system.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Connect to water source.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Adjust sprinkler heads.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Turn on water supply.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5. Monitor sprinklers for proper function.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6. Run sprinkler system for sufficient duration.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7. Consider plant water requirements and soil type.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8. Check for malfunctions or blockages.</hasWateringSteps>
+        <hasWateringSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9. Adjust watering schedule based on needs.</hasWateringSteps>
+        <rdfs:label xml:lang="en">SprinklerIrrigationProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StemCuttingProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StemCuttingProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#CuttingProcess"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Process"/>
+        <usesTool rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PruningShears"/>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Select the plant.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2. Gather the necessary tools.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3. Choose the right time.</hasCuttingSteps>
+        <hasCuttingSteps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4. Cut the plant stem.</hasCuttingSteps>
+        <rdfs:label xml:lang="en">StemCuttingProcess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rows"/>
+        <rdfs:label xml:lang="en">StraightRows</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Strawberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StrawberryGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Winter"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Red</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Strawberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StrawberryGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StrawberryGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFruitType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Strawberry"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Containers"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#HandPulling"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swat</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-01T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">StrawberryGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Summer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <hasAvgHumidityPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasAvgHumidityPercentage>
+        <hasAvgTemperatureInCelsius rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasAvgTemperatureInCelsius>
+        <rdfs:label xml:lang="en">Summer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ThinningOutPruning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ThinningOutPruning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#MaintenanceTasks"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Pruning"/>
+        <hasDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-10 Days</hasDuration>
+        <rdfs:label xml:lang="en">ThinningOutPruning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Vegetable"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Biopesticides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#AllSeason"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Red/ Yellow/ Black</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Tomato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#VegetableGarden"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Mulching"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasVegetableType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tomato"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sargodha</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-02-22T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">TomatoGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoPinworm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoPinworm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Caterpillars"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides containing spinosad, which is effective against pinworms and can help control their populations on tomato plants.</hasTreatment>
+        <rdfs:label xml:lang="en">TomatoPinworm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoYellowLeafCurlVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TomatoYellowLeafCurlVirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ViralInfections"/>
+        <hasTreatment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of insecticides specifically targeting whiteflies, which are the primary vectors of the virus.</hasTreatment>
+        <rdfs:label xml:lang="en">TomatoYellowLeafCurlVirus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tulip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tulip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Flower"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Predators"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TulipGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Spring"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Red/ Yellow/ Pink</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Tulip</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TulipGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#TulipGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FlowerGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFlowerType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tulip"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#StraightRows"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Deadheading"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muree</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-02-04T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">TulipGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Virucides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Virucides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ChemicalControl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#PestControlMethod"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sehrish Noreen</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-16T06:56:48Z</dc:date>
+        <rdfs:label xml:lang="en">Virucides</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringCan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WateringCan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Tools"/>
+        <hasPriceinRupees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasPriceinRupees>
+        <rdfs:label xml:lang="en">WateringCan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Watermelon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Watermelon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fruit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Plant"/>
+        <hasPestControlMethod rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Fungicides"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WatermelonGarden"/>
+        <requiresWeather rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Summer"/>
+        <hasColor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</hasColor>
+        <hasHeightinFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</hasHeightinFeet>
+        <rdfs:label xml:lang="en">Watermelon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WatermelonGarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WatermelonGarden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#FruitGarden"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Garden"/>
+        <hasFruitType rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Watermelon"/>
+        <hasLayoutStyle rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BrickRaisedBeds"/>
+        <hasMaintenanceTask rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#OrganicFertilizing"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#SehrishNoreen"/>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sargodha</hasAddress>
+        <hasAreainSqFeet rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</hasAreainSqFeet>
+        <hasCreationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-01T00:00:00</hasCreationDate>
+        <rdfs:label xml:lang="en">WatermelonGarden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Winter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Winter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Weather"/>
+        <hasAvgHumidityPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasAvgHumidityPercentage>
+        <hasAvgTemperatureInCelsius rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasAvgTemperatureInCelsius>
+        <rdfs:label xml:lang="en">Winter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WoodenRaisedBeds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#WoodenRaisedBeds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#RaisedBeds"/>
+        <rdfs:label xml:lang="en">WoodenRaisedBeds</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ZigzagRows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#ZigzagRows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#GardenLayout"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#Rows"/>
+        <rdfs:label xml:lang="en">ZigzagRows</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/sehrish/ontologies/2023/5/16/Gardening#BiologicalControl">
+        <rdfs:label xml:lang="en">BiologicalControl</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
