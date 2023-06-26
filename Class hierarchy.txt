@@ -1,0 +1,38 @@
+Garden
+	FlowerGarden
+	FruitGarden
+	HerbGarden
+	VegetableGarden
+GardenLayout
+	ContainerGardening
+	RaisedBeds
+	Rows
+MaintenanceTasks
+	Fertilizing
+	Pruning
+	Weeding
+Person
+	Gardener
+	Owner
+PestControlMethod
+	BiologicalControl
+	ChemicalControl
+Pests
+	Diseases
+		FungalInfections
+		ViralInfections
+	Insects
+		Aphids
+		Caterpillars
+		Slugs
+Plant
+	Flower
+	Fruit
+	Herb
+	Vegetable
+Process
+	CuttingProcess
+	WateringProcess
+Soil
+Tools
+Weather
